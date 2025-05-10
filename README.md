@@ -17,3 +17,12 @@ for i in range(1,7):
     if(nums[i]>max):
         max=nums[i]
 print(max)
+
+
+//print pattern in python
+
+n=int(input("Enter your number"))
+for i in range(1,n):
+    for j in range(1,i):
+        print(j,end=" ")
+    print()
