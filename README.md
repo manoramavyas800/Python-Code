@@ -41,3 +41,13 @@ if(num==reverse):
     print("Palindrome")
 else:
     print("not Palindrome")
+
+    //print Fectorail
+
+    
+def Fectorail(n):
+    xFact=1
+    for i in range(2,n+1):
+        xFact*=i
+    return xFact
+print("Fectorail is",Fectorail(5))
