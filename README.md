@@ -51,3 +51,17 @@ def Fectorial(n):
         xFact*=i
     return xFact
 print("Fectorial is",Fectorial(5))
+//Sieve of Eratosthenes theorm to find prime number in range n
+
+def sieve(n):
+    isPrime=[True]*(n+1)
+    isPrime[0]=isPrime[1]=False
+    for i in range(2,int(n**0.5)+1):
+        if isPrime[i]:
+            for j in range(i*i,n+1,i):
+                isPrime[j]=False
+    for i in range(2,n+1):
+        if(isPrime[i]):
+            print(i,end =' ')
+n=int(input("Enter your number"))
+sieve(n)
