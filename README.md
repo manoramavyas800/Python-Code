@@ -65,3 +65,17 @@ def sieve(n):
             print(i,end =' ')
 n=int(input("Enter your number"))
 sieve(n)
+
+//print combination 
+
+def fectorial(n):
+    xFact=1
+    for i in range (1,n+1):
+        xFact*=i
+    return xFact
+def combination(n,r):
+    return fectorial(n)//(fectorial(r)*fectorial(n-r))
+n=int(input("Enter your Number"))
+r=int(input("Enter value of r"))
+cpr = combination(n, r)
+print(cpr)
