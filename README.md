@@ -79,3 +79,13 @@ n=int(input("Enter your Number"))
 r=int(input("Enter value of r"))
 cpr = combination(n, r)
 print(cpr)
+
+//count digite
+
+n=45637
+count=0
+while(n!=0):
+    temp=n%10
+    count=count+1
+    n=n//10
+print(count)
