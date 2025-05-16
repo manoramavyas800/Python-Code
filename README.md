@@ -89,3 +89,13 @@ while(n!=0):
     count=count+1
     n=n//10
 print(count)
+
+//Sum digit
+
+n=4563789067
+sum=0
+while(n!=0):
+    temp=n%10
+    sum+=temp
+    n=n//10
+print(sum)
